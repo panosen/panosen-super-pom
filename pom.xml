@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.panosen</groupId>
+    <artifactId>super-pom</artifactId>
+    <version>1.0.0</version>
+
+    <parent>
+        <groupId>com.panosen</groupId>
+        <artifactId>scm</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <packaging>pom</packaging>
+    <name>Panosen Super Pom</name>
+    <description>Panosen Root Pom Project. Every Panosen Project must explicitly or implicitly extends from this pom.</description>
+
+    <properties>
+
+        <java.version>1.8</java.version>
+
+        <!-- maven-resources-plugin -->
+        <maven-resources-plugin_version>3.0.2</maven-resources-plugin_version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- maven-source-plugin -->
+        <maven-source-plugin_version>3.2.0</maven-source-plugin_version>
+
+        <!-- maven-compiler-plugin -->
+        <maven-compiler-plugin_version>3.6.1</maven-compiler-plugin_version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+
+        <!-- maven-surefire-plugin -->
+        <maven-surefire-plugin_version>2.20</maven-surefire-plugin_version>
+
+        <!-- maven-site-plugin -->
+        <maven-site-plugin_version>3.7.1</maven-site-plugin_version>
+
+        <!-- maven-assembly-plugin -->
+        <maven-assembly-plugin_version>3.1.0</maven-assembly-plugin_version>
+
+        <!-- maven-project-info-reports-plugin -->
+        <maven-project-info-reports-plugin_version>2.9</maven-project-info-reports-plugin_version>
+
+        <!-- maven-javadoc-plugin -->
+        <maven-javadoc-plugin_version>3.2.0</maven-javadoc-plugin_version>
+
+        <!-- spring-boot-maven-plugin -->
+        <spring-boot-maven-plugin_version>1.5.10.RELEASE</spring-boot-maven-plugin_version>
+
+    </properties>
+
+    <build>
+        <pluginManagement>
+
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${maven-resources-plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${maven-source-plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven-compiler-plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven-surefire-plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>${maven-site-plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>${maven-assembly-plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>${maven-project-info-reports-plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot-maven-plugin_version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${maven-javadoc-plugin_version}</version>
+                </plugin>
+            </plugins>
+
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+</project>
