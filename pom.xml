@@ -38,7 +38,7 @@
         <maven-surefire-plugin_version>2.20</maven-surefire-plugin_version>
 
         <!-- maven-site-plugin -->
-        <maven-site-plugin_version>3.7.1</maven-site-plugin_version>
+        <maven-site-plugin_version>3.9.1</maven-site-plugin_version>
 
         <!-- maven-assembly-plugin -->
         <maven-assembly-plugin_version>3.1.0</maven-assembly-plugin_version>
