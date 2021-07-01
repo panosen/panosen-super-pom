@@ -5,17 +5,25 @@
 
     <groupId>com.panosen</groupId>
     <artifactId>super-pom</artifactId>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
 
     <parent>
         <groupId>com.panosen</groupId>
         <artifactId>scm</artifactId>
-        <version>1.0.1</version>
+        <version>1.1.0</version>
     </parent>
 
     <packaging>pom</packaging>
     <name>Panosen Super Pom</name>
+    <url>https://github.com/panosen/panosen-super-pom</url>
     <description>Panosen Root Pom Project. Every Panosen Project must explicitly or implicitly extends from this pom.</description>
+
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://github.com/panosen/panosen-super-pom/blob/master/LICENSE</url>
+        </license>
+    </licenses>
 
     <properties>
 
