@@ -58,7 +58,7 @@
         <maven-javadoc-plugin_version>3.4.1</maven-javadoc-plugin_version>
 
         <!-- maven-plugin-plugin -->
-        <maven-plugin-plugin_version>3.6.4</maven-plugin-plugin_version>
+        <maven-plugin-plugin_version>3.7.0</maven-plugin-plugin_version>
 
         <!-- spring-boot-maven-plugin -->
         <spring-boot-maven-plugin_version>2.7.5</spring-boot-maven-plugin_version>
