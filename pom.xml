@@ -61,7 +61,7 @@
         <maven-plugin-plugin_version>3.7.1</maven-plugin-plugin_version>
 
         <!-- spring-boot-maven-plugin -->
-        <spring-boot-maven-plugin_version>3.0.1</spring-boot-maven-plugin_version>
+        <spring-boot-maven-plugin_version>3.0.2</spring-boot-maven-plugin_version>
 
     </properties>
 
