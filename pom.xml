@@ -34,7 +34,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- maven-source-plugin -->
-        <maven-source-plugin_version>3.2.1</maven-source-plugin_version>
+        <maven-source-plugin_version>3.3.0</maven-source-plugin_version>
 
         <!-- maven-compiler-plugin -->
         <maven-compiler-plugin_version>3.11.0</maven-compiler-plugin_version>
