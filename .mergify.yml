@@ -1,11 +1,11 @@
-pull_request_rules:
+﻿pull_request_rules:
   - name: automatic merge for dependeabot
     conditions:
       - and:
           - "author=dependabot[bot]"
           - or:
-              - "title~=Bump MSTest.TestAdapter from"
-              - "title~=Bump MSTest.TestFramework from"
+              - "title~=Bump super-pom from"
+              - "title~=Bump super-version from"
     actions:
       merge:
         method: rebase
