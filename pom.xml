@@ -52,7 +52,7 @@
         <maven-assembly-plugin_version>3.7.1</maven-assembly-plugin_version>
 
         <!-- maven-project-info-reports-plugin -->
-        <maven-project-info-reports-plugin_version>3.6.0</maven-project-info-reports-plugin_version>
+        <maven-project-info-reports-plugin_version>3.6.1</maven-project-info-reports-plugin_version>
 
         <!-- maven-javadoc-plugin -->
         <maven-javadoc-plugin_version>3.7.0</maven-javadoc-plugin_version>
