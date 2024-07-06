@@ -5,7 +5,7 @@
 
     <groupId>com.panosen</groupId>
     <artifactId>super-pom</artifactId>
-    <version>1.6.0</version>
+    <version>1.7.0</version>
 
     <parent>
         <groupId>com.panosen</groupId>
@@ -60,9 +60,6 @@
         <!-- maven-plugin-plugin -->
         <maven-plugin-plugin_version>3.13.1</maven-plugin-plugin_version>
 
-        <!-- spring-boot-maven-plugin -->
-        <spring-boot-maven-plugin_version>3.2.4</spring-boot-maven-plugin_version>
-
     </properties>
 
     <build>
@@ -103,11 +100,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-project-info-reports-plugin</artifactId>
                     <version>${maven-project-info-reports-plugin_version}</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                    <version>${spring-boot-maven-plugin_version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
